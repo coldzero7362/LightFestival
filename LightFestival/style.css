@@ -13,7 +13,7 @@
 .side{
     width: 200px;
     height: 650px;
-    border: 1px solid #333;
+    
 }
 .logo{
     width: 100%;
@@ -32,6 +32,7 @@
     text-align: center;
     display: block;
     color: white;
+    font-weight: 900;
 }
 .menu ul li ul{
     display: none;
@@ -49,6 +50,13 @@
     text-align: center;
     display: block;
     color: white;
+}
+
+.menu ul li:hover{
+    background-color: #0084ff;
+}
+.menu ul li ul li:hover{
+    background-color: #52b1ff;
 }
 
 .main{
@@ -85,6 +93,7 @@
 .newsTab{
     width: 100px;
     background-color: #84d2ff;
+    cursor: pointer;
 }
 .newsTab > p{
     text-align: center;
@@ -93,6 +102,7 @@
 .galleryTab{
     width: 100px;
     background-color: #70a6c5;
+    cursor: pointer;
 }
 .galleryTab > p{
     text-align: center;
@@ -100,8 +110,8 @@
 }
 .display{
     border: 2px solid #9ad8fc;
-    border-left: none;
-    border-radius: 5px;
+    
+    border-radius: 0px 5px 5px 5px;
     width: 100%;
     height: 140px;
     overflow: none;
@@ -148,4 +158,116 @@
     border-radius: 20px;
     margin: 20px 10px 20px 10px;
     margin-top: 25px;
+}
+.banner{
+    width: 300px;
+    height: 200px;
+}
+.banner img{
+    width: 250px;
+    height: 55px;
+    border-radius: 10px;
+    
+}
+.border{
+    width: 250px;
+    height: 55px;
+    border-radius: 10px;
+    border: 1px solid #84d2ff;
+    transition: 0.3s;
+    margin: 10px 25px;
+}
+.border:hover{
+    padding: 5px 5px;
+    border: 2px solid #84d2ff;
+}
+.fast{
+    width: 200px;
+    height: 200px;
+}
+.short{
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.short>img:first-child{
+    width: 75px;
+}
+.short:hover{
+    margin-left: 20px;
+}
+footer{
+    display: flex;
+    height: 100px;
+}
+.logo-black{
+    width: 200px;
+    height: 100px;   
+    line-height: 120px;
+}
+.logo-black img{
+    filter: grayscale(100%);
+}
+.bot-menu{
+    display: flex;
+    margin: 0 auto;
+}
+.right{
+    margin: 0 auto;
+}
+.right > p{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.bot-menu > p{
+    cursor: pointer;
+} 
+.none{
+    cursor: auto;
+}
+.popup{
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px solid #9ad8fc;
+    border-radius: 5px;
+    position: absolute;
+    top: 200px;
+    left: 450px;
+    z-index: 999;
+}
+.pin{
+    position: relative;
+}
+.popup  h3{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #9ad8fc;
+    text-align: center;
+    color: #fff;
+    border-bottom: 4px solid #44a5ff ;
+}
+.text{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.text p{
+    margin-top: 10px;
+}
+.close{
+    position: absolute;
+    background-color: #ff2c25;
+    color: #ffffff;
+    width: 50px;
+    height: 30px;
+    border:2px solid #ff5c5c;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    top: 200px;
+    left: 220px;
 }

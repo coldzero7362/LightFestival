@@ -1,5 +1,6 @@
 window.onload = function(){
     $('.gallery').hide();
+    $('.popup').hide();
     $('.menu ul li').hover(function(){
         $(this).children('ul').stop().slideDown();
     },
@@ -32,5 +33,11 @@ window.onload = function(){
         });
         $('.gallery').show();
         $('.news').hide();
+    });
+    $('.open').click(()=>{
+        $('.popup').show();
+    });
+    $('.close').click(()=>{
+        $('.popup').hide();
     });
 }
